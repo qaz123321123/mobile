@@ -1,0 +1,39 @@
+@import "$yo-config/core/reset";
+@import "$yo-config/layout/yo-root";
+@import "$yo-config/fragment/yo-header";
+#header{
+    background-color: rgba(255,255,255,0);
+    position: relative;
+    top:0;
+    z-index: 10;
+    width: 100%;
+    color:#212121;
+    height: .44rem;
+    line-height: .44rem;
+    font-size: .18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+    text-align: center;
+}
+#header span.yo-ico{
+    font-size: .2rem;
+    left: 0;
+    padding-left: .15rem;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    width: .6rem;
+    color: #fff;
+    cursor: pointer;
+}
+#header a{
+    color:#fff;
+}
+#header .title{
+    opacity:.01;
+}
+#header::after {
+	border:0;
+}

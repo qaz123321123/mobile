@@ -1,0 +1,60 @@
+@import "$yo-config/core/reset";
+@import "$yo-config/layout/yo-root";
+@import "$yo-config/layout/yo-flex";
+
+.header {
+    text-align: center;
+    height: .44rem;
+    line-height: .44rem;
+    font-size: .18rem;
+}
+ul.lists {
+    white-space: nowrap;
+    margin-bottom: .075rem;
+}
+ul.yo-list > .item::after {
+    border:0;
+}
+ul.lists li {
+    display: inline-block;
+    margin-right: .045rem;
+    font-size: .14rem;
+    text-align: center;
+    border-radius: .05rem;
+    border: 1px solid #00bcd4;
+    color: #00bcd4;
+    cursor:pointer;
+}
+ul li a{
+    line-height: .27rem;
+    width: .64rem;
+    display:inline-block;
+    cursor:pointer;
+}
+ul li a.active{
+    color:#fff;
+    background-color: #00bcd4;
+}
+ul.lists li a:hover{
+    cursor:pointer;
+}
+ul.lists li:first-child {
+    margin-left: 10px;
+}
+.m-content {
+    .title {
+        text-align: center;
+        font-size: .2rem;
+        color: #666666;
+        padding: .1rem;
+    } 
+    .notice {
+        text-align: center;
+        font-size: .16rem;
+        color: #555555;
+        padding: .1rem;
+    }
+    .m-content-active {
+        opacity: 0.7;
+    }
+}
